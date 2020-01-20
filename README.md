@@ -15,19 +15,8 @@ Download [Anaconda with Python3](https://www.continuum.io/downloads); download [
 #### Minimal environment
 Bare [Python](https://www.python.org/) and run in command line / terminal.
 
-### Common Lisp
 
-#### Recommended environment
-Follow [this tutorial](http://lisp-lang.org/learn/getting-started/) to set up Emacs, SBCL, Quicklisp and SLIME.
-
-After installing [Quicklisp](http://www.quicklisp.org/), call (ql:quickloads :split-sequence) to install the split-sequence package.
-
-#### Minimal environment
-Install SBCL and QuickLisp. Call (ql:quickloads :split-sequence) to install the package.
-
-# Workflow
-
-![](http://www.higherordernetwork.com/wp-content/uploads/2016/11/workflow-1024x262.png)
+## Workflow
 
 The workflow to construct the higher-order network is as follows:
 given the raw sequential data, we first decide which nodes need to be split into higher-order nodes, and how high the orders are;
