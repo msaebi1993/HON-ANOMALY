@@ -60,9 +60,10 @@ def AltMixedBiasedNextStep(port):
         return down
 
 def WriteTrajectories(trajectories, iteration, NetType):
-    StrIteration = str(iteration)
-    while len(StrIteration) < 4:
-        StrIteration = '0' + StrIteration
+    # StrIteration = str(iteration)
+    # while len(StrIteration) < 4:
+    #     StrIteration = '0' + StrIteration
+    StrIteration = str(iteration).rjust(4,'0')
     print(StrIteration, NetType)
     with open(OutputFolder + StrIteration + '_' + NetType + '.csv', 'w') as f:
         vid = 1
