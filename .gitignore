@@ -1,0 +1,6 @@
+#  binary folders 
+__pycache__
+
+
+# temp files on mac
+.DS_Store
